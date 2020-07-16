@@ -10,6 +10,7 @@ import UIKit
 
 final class IntroCell: UITableViewCell {
 
+    // MARK: Outlets
     @IBOutlet weak var iconDoctor: UIImageView!
     @IBOutlet weak var mainTitleDoctor: UILabel!
     @IBOutlet weak var descriptionTitleDoctor: UILabel!
@@ -22,6 +23,7 @@ final class IntroCell: UITableViewCell {
     @IBOutlet weak var mainTitleDiagnostic: UILabel!
     @IBOutlet weak var descriptionTitleDiagnostic: UILabel!
     
+    // MARK: Functions
     func setupCellUI(){
         iconDoctor.layer.applyCustomShadow(color: .black, alpha: 0.16, x: 0, y: 11, blur: 35, spread: 0)
         iconMedicines.layer.applyCustomShadow(color: .black, alpha: 0.16, x: 0, y: 11, blur: 35, spread: 0)

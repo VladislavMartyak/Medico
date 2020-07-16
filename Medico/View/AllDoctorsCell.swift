@@ -10,8 +10,10 @@ import UIKit
 
 final class AllDoctorsCell: UITableViewCell {
 
+    //MARK: Outlets
     @IBOutlet weak var allDoctorsView: UICollectionView!
     
+    //MARK: Cell Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -21,7 +23,8 @@ final class AllDoctorsCell: UITableViewCell {
     }
 }
 
-extension AllDoctorsCell: UICollectionViewDataSource, UICollectionViewDelegate{
+//MARK: UICollectionViewDataSource, UICollectionViewDelegate
+extension AllDoctorsCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return doctorsList.count
     }

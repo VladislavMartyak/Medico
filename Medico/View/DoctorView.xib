@@ -28,13 +28,13 @@
                         <rect key="frame" x="0.0" y="27" width="125" height="129"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Alina James" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-Mj-JY5">
-                                <rect key="frame" x="12" y="42" width="79.5" height="14"/>
+                                <rect key="frame" x="12" y="42" width="69.5" height="12"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="10"/>
                                 <color key="textColor" red="0.19215686274509802" green="0.20392156862745098" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZr-I8-r3o">
-                                <rect key="frame" x="12" y="62" width="99" height="25.5"/>
+                                <rect key="frame" x="12" y="60" width="104" height="21"/>
                                 <string key="text">B.Sc, MBBS, DDVL, MD- 
 Dermitologist</string>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="9"/>
@@ -42,7 +42,7 @@ Dermitologist</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oge-5l-N5w">
-                                <rect key="frame" x="12" y="97.5" width="34" height="14"/>
+                                <rect key="frame" x="12" y="91" width="34" height="14"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="DbE-jh-3up">
                                         <rect key="frame" x="0.0" y="0.0" width="14.5" height="14"/>

@@ -10,13 +10,16 @@ import UIKit
 
 final class PromotionsCell: UITableViewCell {
     
+    // MARK: Outlets
     @IBOutlet weak var promotionsView: UICollectionView!
     
+    // MARK: Constants
     let promoCount = 2
     
 }
 
-extension PromotionsCell: UICollectionViewDataSource, UICollectionViewDelegate{
+// MARK: UICollectionViewDataSource, UICollectionViewDelegate
+extension PromotionsCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return promoCount
     }

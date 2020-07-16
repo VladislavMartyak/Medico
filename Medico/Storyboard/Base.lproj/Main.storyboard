@@ -26,7 +26,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MORE STUFF COMING SOON!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02f-7A-9Lv">
+                                <rect key="frame" x="62.666666666666657" y="369.66666666666669" width="249.99999999999997" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="BxV-cc-sZN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="26"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="02f-7A-9Lv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pdR-aE-xzp"/>
+                            <constraint firstItem="02f-7A-9Lv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u7p-Mx-LRe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="user-4" id="7dW-MT-He5"/>
@@ -418,14 +433,29 @@ Given code</string>
                     <view key="view" contentMode="scaleToFill" id="EOe-JJ-YL9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MORE STUFF COMING SOON!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNZ-oY-yu8">
+                                <rect key="frame" x="62.666666666666657" y="369.66666666666669" width="249.99999999999997" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="O5D-kd-cCA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="26"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kNZ-oY-yu8" firstAttribute="centerY" secondItem="EOe-JJ-YL9" secondAttribute="centerY" id="dkc-K5-LMU"/>
+                            <constraint firstItem="kNZ-oY-yu8" firstAttribute="centerX" secondItem="EOe-JJ-YL9" secondAttribute="centerX" id="ges-4Q-dHE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KKS-zW-o0d"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" image="tick" id="c1K-bA-Tyd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GI2-hK-POe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2698" y="108"/>
+            <point key="canvasLocation" x="2696.8000000000002" y="107.88177339901478"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BJU-WM-s8y">
