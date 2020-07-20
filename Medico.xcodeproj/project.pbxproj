@@ -24,6 +24,8 @@
 		3C51356324BCA12300295414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C51356124BCA12300295414 /* LaunchScreen.storyboard */; };
 		3C51356B24BCA9AA00295414 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51356A24BCA9AA00295414 /* HomeController.swift */; };
 		3C683AF324BCBB78008FB2DC /* IntroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C683AF224BCBB78008FB2DC /* IntroCell.swift */; };
+		3C91D86924C5C3960094FDAB /* AllDoctorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91D86824C5C3960094FDAB /* AllDoctorsPresenter.swift */; };
+		3C91D86D24C5D6F40094FDAB /* DoctorDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91D86C24C5D6F40094FDAB /* DoctorDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		3C51356424BCA12300295414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C51356A24BCA9AA00295414 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		3C683AF224BCBB78008FB2DC /* IntroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCell.swift; sourceTree = "<group>"; };
+		3C91D86824C5C3960094FDAB /* AllDoctorsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoctorsPresenter.swift; sourceTree = "<group>"; };
+		3C91D86C24C5D6F40094FDAB /* DoctorDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +73,10 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		3C1E780524C0A20400E6F4A2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3C51356A24BCA9AA00295414 /* HomeController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		3C1E780624C0A20E00E6F4A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C51356A24BCA9AA00295414 /* HomeController.swift */,
 				3C683AF224BCBB78008FB2DC /* IntroCell.swift */,
 				3C1E77FD24C091EB00E6F4A2 /* PromotionsCell.swift */,
 				3C1E77FF24C0926100E6F4A2 /* PromoCell.swift */,
@@ -138,14 +135,31 @@
 				3C51355624BCA11F00295414 /* AppDelegate.swift */,
 				3C51355824BCA11F00295414 /* SceneDelegate.swift */,
 				3C51355F24BCA12300295414 /* Assets.xcassets */,
-				3C1E780824C0A21800E6F4A2 /* Extension */,
 				3C1E780724C0A21200E6F4A2 /* Model */,
 				3C1E780624C0A20E00E6F4A2 /* View */,
-				3C1E780524C0A20400E6F4A2 /* Controller */,
+				3C91D84724C5BD7C0094FDAB /* Presenter */,
+				3C91D86E24C5D6FC0094FDAB /* Service */,
 				3C3FA28624C0DC27009B119E /* Storyboard */,
+				3C1E780824C0A21800E6F4A2 /* Extension */,
 				3C1E77ED24C0716300E6F4A2 /* Fonts */,
 			);
 			path = Medico;
+			sourceTree = "<group>";
+		};
+		3C91D84724C5BD7C0094FDAB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3C91D86824C5C3960094FDAB /* AllDoctorsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3C91D86E24C5D6FC0094FDAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3C91D86C24C5D6F40094FDAB /* DoctorDataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +240,9 @@
 				3C1E77F824C073FC00E6F4A2 /* CustomShadow.swift in Sources */,
 				3C1E77FE24C091EB00E6F4A2 /* PromotionsCell.swift in Sources */,
 				3C683AF324BCBB78008FB2DC /* IntroCell.swift in Sources */,
+				3C91D86D24C5D6F40094FDAB /* DoctorDataService.swift in Sources */,
 				3C51356B24BCA9AA00295414 /* HomeController.swift in Sources */,
+				3C91D86924C5C3960094FDAB /* AllDoctorsPresenter.swift in Sources */,
 				3C51355724BCA11F00295414 /* AppDelegate.swift in Sources */,
 				3C1E780C24C0A4E600E6F4A2 /* AllDoctorsCell.swift in Sources */,
 				3C1C0EE824C0CAF4007790C7 /* Doctor.swift in Sources */,

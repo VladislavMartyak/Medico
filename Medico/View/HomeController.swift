@@ -11,11 +11,11 @@ import UIKit
 class HomeController: UIViewController {
     
     // MARK: Outlets
-    @IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet private weak var homeTableView: UITableView!
 
     // MARK: Constants
-    let sectionCount = 1
-    let rowsCount = 4
+    private let sectionCount = 1
+    private let rowsCount = 4
     
     // MARK: UIViewController Lifecycle
     override func viewDidLoad() {

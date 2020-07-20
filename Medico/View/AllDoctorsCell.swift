@@ -13,9 +13,16 @@ final class AllDoctorsCell: UITableViewCell {
     //MARK: Outlets
     @IBOutlet weak var allDoctorsView: UICollectionView!
     
+    
+    private var presenter = AllDoctorsPresenter(dataService: DoctorDataService())
+    private var doctors = [Doctor]()
+    
     //MARK: Cell Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.presenter.attachView(view: self)
+        self.presenter.getDoctors()
         
         self.allDoctorsView.register(UINib.init(nibName: "DoctorView", bundle: nil), forCellWithReuseIdentifier: "DoctorCell")
         self.allDoctorsView.clipsToBounds = false
@@ -23,10 +30,21 @@ final class AllDoctorsCell: UITableViewCell {
     }
 }
 
+extension AllDoctorsCell: AllDoctorsView{
+    func setAllDoctors(doctors: [Doctor]) {
+        self.doctors = doctors
+    }
+    
+    func printDetails(message: String) {
+        print(message)
+    }
+    
+}
+
 //MARK: UICollectionViewDataSource, UICollectionViewDelegate
 extension AllDoctorsCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return doctorsList.count
+        return doctors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -41,10 +59,15 @@ extension AllDoctorsCell: UICollectionViewDataSource, UICollectionViewDelegate {
     
         cell.insertSubview(shadowView, at: 0)
         
-        cell.setupData(doctorData: doctorsList[indexPath.row])
+        cell.setupData(doctorData: doctors[indexPath.row])
         
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.presenter.getDetails(doctor: doctors[indexPath.row])
+        allDoctorsView.deselectItem(at: indexPath, animated: false)
+        
+    }
     
 }
